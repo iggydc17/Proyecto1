@@ -16,19 +16,19 @@
 
     <!-- header -->
 
-    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">Coder House Class</a>
+            <li class="navbar-brand"><a class="nav-link" href="{% url 'Inicio' %">Coder House Class</a></li>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#Cursos">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Entregables">Entregables</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Estudiantes">Estudiantes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Profesores">Profesores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Cursos' %}">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Entregables' %}">Entregables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Profesores' %}">Profesores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'Estudiantes' %}">Estudiantes</a></li>
                 </ul>
             </div>
         </div>
@@ -39,5 +39,7 @@
         {% endblock %}
     </div>
     <footer></footer>
+
 </body>
+
 </html>
